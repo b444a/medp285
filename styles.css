@@ -1,0 +1,45 @@
+
+/*html tag selector controlling body tag*/
+body {
+    background-color: mistyrose;
+    margin: 0px;
+    padding: 100px 60px 0px 60px;
+}
+main h2{
+  color:#9e71d1;
+  
+}
+header h1{color:#ba567f;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: 900;
+       font-weight: 300;
+       font-stretch:narrower;
+    
+}
+header h2{
+    color:#3c1035;
+    font-size: 44px;
+    font-style: oblique;
+    font-weight: 100;
+    font-family:cursive;
+    margin: 0px 0px 30px 0px;
+}
+
+nav a{
+    font-weight: 900;
+    font-size: 24px;
+    font-family: monospace;
+    margin: 0px 20px 0px 0px;
+    text-decoration: none;
+    color:rgb(132, 168, 61);
+
+}
+
+nav a:hover{
+    color:aquamarine;
+}
+main img{
+    width: 300px;
+}
+
+
