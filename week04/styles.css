@@ -1,0 +1,88 @@
+body {
+    background-color: #4cb518;
+    padding: 20px 100px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    margin: 0px 0px 30px 0px;
+}
+
+#wrapper {
+    background-color: rgb(184, 154, 213);
+ 
+}
+header {
+    background-color: #55ff00;
+    padding: 20px;
+}
+nav{
+    background-color: rgb(151, 107, 152);
+    padding: 10px;
+    text-align: center;
+}
+nav li{
+       display: inline;
+       margin: 0px 40px;
+       font-family: "Lora", serif;
+       font-optical-sizing: auto;
+       font-weight:20px;
+       font-style: normal; 
+       
+}
+nav a {
+    text-decoration: none;
+    color:rgb(122, 56, 139)
+}
+nav a:hover{
+    color:rgb(200, 90, 222);
+}
+main{
+    background-color: rgb(119, 188, 93);
+}
+footer{
+    background-color: rgb(158, 60, 160);
+    padding: 20px;
+}
+section{
+    background-color: rgb(111, 184, 98);
+    padding: 40px;
+}
+article{
+    background-color: rgb(181, 110, 183);
+    padding: 10px 80px;
+    border: #ca9fbc dotted 2px ;
+    margin: 20 px 0px;
+    
+}
+p {
+    padding-left: 20px;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  header h1{color:#b3708c;
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke;
+ 
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+main{
+    text-align: center;
+
+}
