@@ -1,0 +1,176 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: skyblue;
+  grid-column: 1 / 13;
+}
+
+main {
+  background: slategray;
+  grid-column: 4 / 10;
+}
+
+nav {
+  background: cadetblue;
+  grid-column: 1 / 4;
+}
+
+aside {
+  background: seagreen;
+  grid-column: 10 / 13;
+}
+
+main, nav, aside {
+  grid-row: 2 / 4;
+}
+
+footer {
+  background: darkslateblue;
+  grid-column: 1 / 13;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fbeff2;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+header {
+    grid-column: span 12;
+    background-color: #ffc0cb;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+
+nav {
+    grid-column: span 3;
+    background-color: #ffb6c1;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem; 
+
+}
+
+
+main {
+    grid-column: span 6;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+aside {
+    grid-column: span 3;
+    background-color: #ffcccb;
+    padding: 15px;
+}
+
+
+footer {
+    grid-column: span 12;
+    background-color: #f8a9c6;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+
+.styled-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid #ffb6c1;
+    margin-top: 10px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sidebar-link-img {
+    width: 100%;
+    border-radius: 10px; 
+    margin: 10px 0; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.sidebar-link-img:hover {
+    transform: scale(1.05);
+}
+h1 {
+    color: rgb(113, 69, 69);
+  }
+  nav a:hover {
+    color: rgb(226, 0, 136); 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out; 
+}
