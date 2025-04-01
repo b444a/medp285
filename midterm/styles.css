@@ -1,0 +1,224 @@
+body {
+    background: linear-gradient(135deg, #1a1a2e, #ff0080);
+    color: #a4205b;
+   
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background: #ed30c7;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    color: #ff0080;
+    text-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080;
+    animation: neonGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #ff0080, 0 0 10px #89fbff, 0 0 15px #ff0080;
+        color: #e1ff00;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff0080, 0 0 30px #6bf5fe, 0 0 40px #ff0080;
+        color: #ffdd40;
+    }
+    100% {
+        text-shadow: 0 0 5px #ff0080, 0 0 10px #d8ecdc, 0 0 15px #ff0080;
+        color: #00ffea;
+    }
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a img {
+    width: 60px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover img {
+    transform: scale(1.2); 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section {
+    background: rgba(255, 0, 128, 0.8);
+    padding: 40px; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px #40ff40;
+    width: 80%; 
+    max-width: 900px;
+    min-height: 300px; 
+}
+
+footer {
+    background: #ff0080;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #00ffea;
+    font-family: monospace;
+}
+
+footer a {
+    color: #ffdd40;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(85, 0, 255);
+}
+table {
+    margin: 0 auto; 
+    border-collapse: collapse; 
+}
+.center-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.animated-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #cf679b;
+    transition: transform 0.5s ease-in-out;
+}
+.homepage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.animated-circle:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+.fashion-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.fashion-gallery img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff0080;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fashion-gallery img:hover {
+    transform: scale(1.1);
+}
+.tv-movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.tv-movie-grid .item {
+    text-align: center;
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.tv-movie-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-content: center; 
+    box-shadow: 0px 0px 10px #ff0080;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tv-movie-grid img:hover {
+    transform: scale(1.05);
+}
+
+.tv-movie-grid .title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #e5dce1;
+    font-style: italic;
+}
+
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.music-item {
+    text-align: center;
+}
+
+.music-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;  /* Makes images circular */
+    box-shadow: 0px 0px 10px #ff0080; /* Adds a neon glow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.music-item img:hover {
+    transform: scale(1.1);
+}
+
+.music-item p {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #e5dce1;
+    font-family: 'Press Start 2P', cursive;
+}
