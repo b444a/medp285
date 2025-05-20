@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>727 Nailss | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="home-page">
+
+    <div id="loader">
+        <div class="loader-bubble"></div>
+        <div class="loader-bubble"></div>
+        <div class="loader-bubble"></div>
+      </div>
+    <div id="p5-header"></div>
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="main.js"></script>
+<script src="gallery.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+<script src="sketch.js"></script>
+
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog & Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="home-main">
+    <section class="welcome">
+      <h1 class="welcome-heading">Welcome to 727Nailss</h1>
+      <p>Bright, bold, and uniquely you. Let your nails speak!</p>
+      <div class="img-center">
+      <img src="images /nail10.jpg" alt="nail10" class="nail10-img" />
+    </section>
+  </main>
+  <footer>
+    <p>Follow us on <a href="https://instagram.com/727nailss" target="_blank">Instagram</a></p>
+    <div id="footer-animation"></div>
+
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('mousemove', function (e) {
+      const star = document.createElement('div');
+      star.classList.add('cursor-star');
+      star.style.left = `${e.clientX}px`;
+      star.style.top = `${e.clientY}px`;
+      document.body.appendChild(star);
+      setTimeout(() => {
+        star.remove();
+      }, 800);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+  <script>
+    let hearts = [];
+  
+    function setup() {
+      let canvas = createCanvas(window.innerWidth, 100);
+      canvas.parent('footer-animation');
+      for (let i = 0; i < 20; i++) {
+        hearts.push({
+          x: random(width),
+          y: random(height),
+          size: random(10, 30),
+          speed: random(0.5, 1.5),
+          color: color(random(200,255), random(100,200), random(200,255), 150)
+        });
+      }
+      noStroke();
+    }
+  
+    function draw() {
+      clear();
+      for (let h of hearts) {
+        fill(h.color);
+        drawHeart(h.x, h.y, h.size);
+        h.y -= h.speed;
+        if (h.y < -20) {
+          h.y = height + 20;
+          h.x = random(width);
+        }
+      }
+    }
+  
+    function drawHeart(x, y, s) {
+      beginShape();
+      vertex(x, y);
+      bezierVertex(x - s, y - s, x - s * 1.5, y + s / 3, x, y + s);
+      bezierVertex(x + s * 1.5, y + s / 3, x + s, y - s, x, y);
+      endShape(CLOSE);
+    }
+  
+    function windowResized() {
+      resizeCanvas(window.innerWidth, 100);
+    }
+  </script>
+  
+</body>
+</html>
